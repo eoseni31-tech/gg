@@ -1,0 +1,15 @@
+{
+  "name": "safiyah-couple-app",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "db:setup": "node --env-file=.env.local scripts/setup.mjs",
+    "test": "node --test tests/*.mjs"
+  },
+  "dependencies": {
+    "@libsql/client": "0.18.0"
+  }
+}
